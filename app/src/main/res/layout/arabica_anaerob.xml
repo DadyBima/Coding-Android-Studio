@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/card_margin"
+    android:background="?android:selectableItemBackground"
+    tools:context=".ArabicaNatural">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ip_product" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/productImage"
+            android:padding="@dimen/card_margin"
+            android:text="Arabica Anaerob"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:id="@+id/newsTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productImage"
+            android:padding="@dimen/card_margin"
+            android:text="Single Origins"
+            android:textColor="?android:textColorSecondary" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsTitle"
+            android:layout_marginTop="0dp"
+            android:padding="@dimen/card_margin"
+            android:text="Arabica Natural Specialty \nKopi Arabika dengan pilihan yang berkualitas dipetik dari pegunungan Sindoro Kabupaten Temanggung yang berada di ketinggian 1200-1400 mdpl dan dirawat dengan organik plant. Kopi ini menggunakan Proses Natural, Roasting Profile : Medium Roast+ Cupping Notes : citrus,jackfruit."/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

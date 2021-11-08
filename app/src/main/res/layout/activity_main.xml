@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ip_bgr"
+    android:gravity="center"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ip_logo2" />
+
+    <TextView
+        android:id="@+id/selamatDatang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="SELAMAT DATANG"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Desa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/selamatDatang"
+        android:text="DI"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/Sambongrejo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/Desa"
+        android:text="DESA SAMBONGREJO "
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

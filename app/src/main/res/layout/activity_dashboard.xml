@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:background="@drawable/ip_dashboard">
+
+            <ImageView
+                android:id="@+id/textGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ip_logo2"/>
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:id="@+id/GridLay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:rowCount="3"
+            android:background="@color/E5DCC3"
+            android:layout_marginTop="0dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:onClick="tambahList1"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ip_product" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Arabica Natural"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:onClick="GoToProduct1"/>
+
+                    <TextView
+                        android:id="@+id/menu1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="9dp"
+                        android:text="Rp 24.000"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ip_product"
+                        android:onClick="tambahList2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arabica Anaerob"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:onClick="GoToProduct2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 24.000"
+                        android:id="@+id/menu2"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ip_product"
+                        android:onClick="tambahList3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arabica Wine"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:onClick="GoToProduct3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 28.000"
+                        android:id="@+id/menu3"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ip_product"
+                        android:onClick="tambahList4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Robusta Natural"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:onClick="GoToProduct4"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 12.000"
+                        android:id="@+id/menu4"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ip_product"
+                        android:onClick="tambahList5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Robusta Honey"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:onClick="GoToProduct5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 12.000"
+                        android:id="@+id/menu5"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ip_product"
+                        android:onClick="tambahList6"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Robusta Fullwash"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:onClick="GoToProduct6"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 12.000"
+                        android:id="@+id/menu6"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp"
+>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ip_double_product"
+                        android:onClick="tambahList7"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paket Robusta + Arabica"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:onClick="GoToProduct7"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 80.000"
+                        android:id="@+id/menu7"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ip_product"
+                        android:onClick="tambahList8"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peaberry AraRobus"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:onClick="GoToProduct8"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 43.000"
+                        android:id="@+id/menu8"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+        <TextView
+            android:id="@+id/totalharga"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/EDEDED"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@color/teal_700"
+            android:id="@+id/belanja"
+            android:text="Check Out"
+            android:onClick="CheckOut"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dadybima.morojiwocoffee.Dashboard">
+
+    <item
+        android:id="@+id/UpdateUserPass"
+        android:orderInCategory="100"
+        android:title="Update User dan Password"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/CallCenter"
+        android:orderInCategory="40"
+        android:title="Call Center"
+        android:icon="@drawable/ic_baseline_call_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/SmsCenter"
+        android:orderInCategory="40"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="SMS Center"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/LokasiMaps"
+        android:orderInCategory="40"
+        android:title="Lokasi/Maps"
+        app:showAsAction="never" />
+
+</menu>

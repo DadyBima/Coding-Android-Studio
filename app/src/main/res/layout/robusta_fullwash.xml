@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/card_margin"
+    android:background="?android:selectableItemBackground"
+    tools:context=".ArabicaNatural">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ip_product" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/productImage"
+            android:padding="@dimen/card_margin"
+            android:text="Robusta Fullwash"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:id="@+id/newsTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productImage"
+            android:padding="@dimen/card_margin"
+            android:text="Single Origins"
+            android:textColor="?android:textColorSecondary" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newsTitle"
+            android:layout_marginTop="0dp"
+            android:padding="@dimen/card_margin"
+            android:text="Robusta Fullwash Specialty  \nRobusta Fullwash adalah 100% kopi Robusta murni berkualitas tinggi di petik merah yang diambil dari pertanian kopi di kaki gunung Sindoro, Temanggung. lokasi di Kandangan  yang memiliki ketinggian 700-900 Mdpl, kopi dengan high quality memiliki notes yang unik  yaitu Clean dan memiliki sedikit rasa pahit. Roast : Medium +" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:background="@drawable/ip_mantul"
+    tools:context=".CheckOutActivity">
+
+
+    <TextView
+        android:id="@+id/TVrincian_pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Rincian Pembayaran"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/relav"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/TVrincian_pembayaran"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/shape"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/totalharga"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Tagihan :"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/totalharga"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvNamaPembeli"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tvTotal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Nama Pembeli : "
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/NamaPembeli"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvTotal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tvNamaPembeli"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textColorHint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tvUangBayar"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/tvNamaPembeli"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Uang Bayar :"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/etBayar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NamaPembeli"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tvUangBayar"
+            android:gravity="center"
+            android:hint="Input Nominal"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvUangBayar"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/totalKembalian"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Kembalian :"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tvKembalian"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/view"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/totalKembalian"
+            android:gravity="center"
+            android:hint="-"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_bayar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relav"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:onClick="Bayar"
+        android:text="Bayar" />
+
+    <Button
+        android:id="@+id/button_gobackDash"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_bayar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:onClick="GoBackToDashboard"
+        android:text="Go BACK TO DASHBOARD" />
+
+
+</RelativeLayout>

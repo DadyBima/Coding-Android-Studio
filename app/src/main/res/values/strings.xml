@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Morojiwo Coffee</string>
+    <string name="action_UpdateUserPass">User dan Pass telah di Update</string>
+    <string name="action_CallCenter">Anda akan di hubungkan ke No kami </string>
+    <string name="action_SmsCenter">Anda akan mendapatkan pesan dari kami</string>
+    <string name="action_LokasiMaps">Lokasi kami akan segera dikirimkan ke anda</string>
+</resources>
