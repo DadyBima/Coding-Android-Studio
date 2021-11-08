@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/judul1"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_persegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="27dp"
+        android:onClick="Persegi"
+        android:text="@string/button_text1" />
+    <Button
+        android:id="@+id/button_segitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_persegi"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="12dp"
+        android:onClick="Segitiga"
+        android:text="@string/button_text2" />
+    <Button
+        android:id="@+id/button_lingkaran"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_segitiga"
+        android:layout_marginTop="12dp"
+        android:onClick="Lingkaran"
+        android:text="@string/button_text3" />
+    <Button
+        android:id="@+id/button_kubus"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_lingkaran"
+        android:layout_marginTop="12dp"
+        android:onClick="Kubus"
+        android:text="@string/button_text4" />
+
+
+</RelativeLayout>

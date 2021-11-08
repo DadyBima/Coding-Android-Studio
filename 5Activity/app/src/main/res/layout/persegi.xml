@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Persegi">
+
+    <EditText
+        android:id="@+id/sisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input" />
+
+    <Button
+        android:id="@+id/luasPersegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sisi"
+        android:onClick="LuasPersegi"
+        android:text="@string/luas" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LuasPersegi"
+        android:layout_below="@id/luasPersegi"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keliling"
+        android:onClick="KelilingPersegi"
+        android:id="@+id/kelilingPersegi"
+        android:layout_below="@+id/LuasPersegi"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/KelilingPersegi"
+        android:layout_below="@id/kelilingPersegi"
+        android:textSize="20sp"/>
+</RelativeLayout>

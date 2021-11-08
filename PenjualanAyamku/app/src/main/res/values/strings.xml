@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Penjualan Ayamku</string>
+    <string name="title_holderbar">Ayamku</string>
+    <string name="list1">Ayam Goreng Original</string>
+    <string name="list2">Ayam Goreng Alasan</string>
+    <string name="list3">Ayam Bakar Malika</string>
+    <string name="list4">Ayam Geprek Nggak ada Akhalak</string>
+    <string name="list5">Ayam Goreng Keju Lumer</string>
+    <string name="list6">Ayam Goreng Ribut</string>
+</resources>

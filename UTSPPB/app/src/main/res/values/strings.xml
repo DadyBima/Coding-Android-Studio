@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Morojiwo Coffee</string>
+    <string name="action_UpdateUserPass">User dan Pass telah di Update</string>
+    <string name="action_CallCenter">Anda akan di hubungkan ke No kami </string>
+    <string name="action_SmsCenter">Anda akan mendapatkan pesan dari kami</string>
+    <string name="action_LokasiMaps">Lokasi kami akan segera dikirimkan ke anda</string>
+    <string name="title_placeholder">Title</string>
+    <string name="news_label">News</string>
+    <string name="filler_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+        vitae semper quam. In a metus ut nisl pharetra hendrerit et a leo. Curabitur nec sapien
+        odio. Vestibulum a mollis felis. Cras molestie felis nibh, ut maximus mauris feugiat
+        tincidunt. Curabitur ultricies eros sed ipsum pulvinar vehicula. Maecenas volutpat,
+        massa sit amet aliquam eleifend, massa lorem tempor sapien, eget finibus massa dolor
+        molestie lorem. Suspendisse at purus mauris. Proin nibh ligula, suscipit vel pharetra
+        posuere, bibendum id lorem.</string>
+</resources>

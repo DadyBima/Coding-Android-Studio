@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Lingkaran">
+    <EditText
+        android:id="@+id/jarijari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input" />
+    <Button
+        android:id="@+id/buttonluaslingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jarijari"
+        android:onClick="LuasLingkaran"
+        android:text="@string/luas" />
+    <TextView
+        android:id="@+id/TVLuasLingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonluaslingkaran"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/buttonkelilingLingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVLuasLingkaran"
+        android:onClick="KelilingLingkaran"
+        android:text="@string/keliling" />
+    <TextView
+        android:id="@+id/TVKelilingLingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonkelilingLingkaran"
+        android:textSize="20sp"/>
+</RelativeLayout>

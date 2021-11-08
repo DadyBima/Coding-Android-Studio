@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Implicit Intens</string>
+    <string  name="editText_URL">https://instagram.com/morojiwo.co</string>
+    <string name="button_url">Open Website</string>
+    <string name="edittext_loc">Morojiwo Coffee</string>
+    <string name="button_loc">Open Location</string>
+    <string name="edittext_share">Morojiwo Coffee is be Better</string>
+    <string name="button_share">Share This Text</string>
+</resources>

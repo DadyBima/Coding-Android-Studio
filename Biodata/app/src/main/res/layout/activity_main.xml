@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/picmhs"
+        android:layout_width="114dp"
+        android:layout_height="166dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/foto" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nim"
+        android:textSize="15sp"
+        android:layout_marginTop="17dp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/mhs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nim"
+        android:layout_marginTop="5dp"
+        android:text="@string/Nama"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mhs"
+        android:layout_marginTop="5dp"
+        android:text="@string/Alamat"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/No.Hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat"
+        android:layout_marginTop="5dp"
+        android:text="@string/No.Hp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/No.Hp"
+        android:layout_marginTop="5dp"
+        android:text="@string/Email"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_next"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/text"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="nextPage"
+        android:text="@string/nextPage"
+        tools:layout_editor_absoluteX="-32dp"
+        tools:layout_editor_absoluteY="669dp"
+        tools:ignore="UsingOnClickInXml" />
+
+</RelativeLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/teal_700">
+
+            <TextView
+                android:id="@+id/textGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:background="@drawable/jagonya"/>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/GridLay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="3">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_margin="7dp"
+                    android:onClick="tambahList1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:paddingTop="15dp"
+                            android:src="@drawable/ayam_original" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/list1"
+                            android:paddingStart="5dp"
+                            android:paddingTop="5dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15000"
+                            android:id="@+id/menu1"
+                            android:textAlignment="textEnd"
+                            android:paddingEnd="9dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp"
+                android:onClick="tambahList2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ayam_kalasan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list2"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="18000"
+                        android:id="@+id/menu2"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp"
+                android:onClick="tambahList3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ayam_bakar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list3"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="19000"
+                        android:id="@+id/menu3"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp"
+                android:onClick="tambahList4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ayam_geprek" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list4"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="21000"
+                        android:id="@+id/menu4"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp"
+                android:onClick="tambahList5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ayam_mozarela" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list5"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="22000"
+                        android:id="@+id/menu5"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp"
+                android:onClick="tambahList6">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/ayam_crispy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list6"
+                        android:paddingStart="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="23000"
+                        android:id="@+id/menu6"
+                        android:textAlignment="textEnd"
+                        android:paddingEnd="9dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@color/teal_200"
+            android:id="@+id/totalharga"/>
+
+    </LinearLayout>
+</ScrollView>

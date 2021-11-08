@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Biodata</string>
+    <string name="Nim">NIM = A11.2020.13039</string>
+    <string name="Nama">Nama = DADY BIMA NUR SEJATI</string>
+    <string name="Email">Email = 111202013039@mhs.dinus.ac.id</string>
+    <string name="Alamat">Alamat = Rt03/Rw02 Gendengan, \nNgadirejo, Temanggung.</string>
+    <string name="No.Hp">NO. Hp = 085879610915</string>
+    <string name="nextPage">NEXT PAGE</string>
+    <string name="text">Klik tombol "NEXT PAGE" untuk melihat CV</string>
+    <string name="cv">CV</string>
+</resources>

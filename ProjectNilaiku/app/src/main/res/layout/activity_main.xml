@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TVnim"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/Nim"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/ETnim"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/TVnim"
+        android:hint="Tulis NIM Anda"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/TVnama"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/TVnim"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/Nama"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/ETnama"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETnim"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/TVnama"
+        android:hint="Tulis Nama Anda"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/TVnTugas"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/TVnama"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/tugas"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/ETnTugas"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETnama"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/TVnTugas"
+        android:hint="Nilai Tugas "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/pTugas"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/ETnama"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ETnTugas"
+        android:gravity="center"
+        android:text="30%" />
+    <EditText
+        android:id="@+id/NaTugas"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETnama"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/pTugas"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/TVnUts"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/TVnTugas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/uts"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/ETnUts"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETnTugas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/TVnUts"
+        android:hint="Nilai UTS"
+
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/pUts"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/pTugas"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ETnUts"
+        android:gravity="center"
+        android:text="35%" />
+    <EditText
+        android:id="@+id/NaUts"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NaTugas"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/pUts"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/TVnUas"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/TVnUts"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/uas"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/ETnUas"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETnUts"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/TVnUas"
+        android:hint="Nilai UAS"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/pUas"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/pUts"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ETnTugas"
+        android:gravity="center"
+        android:text="35%" />
+    <EditText
+        android:id="@+id/NaUas"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NaUts"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/pUas"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/TVnAkhir"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/TVnUas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/akhir"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/etnakhir"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETnUas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/TVnAkhir"
+        android:hint="Nilai Akhir"
+        android:textColor="@color/black"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/TVnHuruf"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/TVnAkhir"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/huruf"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/ETnHuruf"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etnakhir"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/TVnHuruf"
+        android:hint="Nilai Huruf"
+        android:textColor="@color/black"
+        android:focusable="false" />
+    <TextView
+        android:id="@+id/TVpredikat"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/TVnHuruf"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/predikat"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/ETpredikat"
+        android:layout_width="258dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ETnHuruf"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/TVpredikat"
+        android:hint="Predikat"
+        android:textColor="@color/black"
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/buttonHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/TVpredikat"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="hitung"
+        android:text="Hitung" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/ETpredikat"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/buttonHitung"
+        android:onClick="exit"
+        android:text="Exit" />
+</RelativeLayout>

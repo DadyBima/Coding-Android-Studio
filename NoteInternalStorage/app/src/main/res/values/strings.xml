@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Belajar Menu</string>
+    <string name="text_view">Enter The Text</string>
+    <string name="ketikCatatan">Ketik catatan di sini</string>
+    <string name="saveNotes">SAVE NOTES</string>
+    <string name="readNotes">READ NOTES</string>
+    <string name="saveNotes_SDCard">SAVE NOTES TO SD CARD</string>
+    <string name="readNotes_SDCard">READ NOTES TO SD CARD</string>
+</resources>

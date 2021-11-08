@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cyclelife callback two activities</string>
+    <string name="button_main">Kirim</string>
+    <string name="text_header">Pesan Diterima</string>
+    <string name="editText_main">Ketik Pesan Anda Disini</string>
+    <string name="button_second">Balas</string>
+    <string name="Text_second">Ketik Balasan Disini</string>
+    <string name="text_header_reply">Reply Received</string>
+</resources>

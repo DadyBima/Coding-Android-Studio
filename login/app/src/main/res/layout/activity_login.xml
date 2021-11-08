@@ -1,0 +1,37 @@
+<ImageView android:id="@+id/sportsImageDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:src="@drawable/img_bowling"
+    android:paddingTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+<TextView
+android:id="@+id/titleDetail"
+style="@style/TextAppearance.AppCompat.Headline"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignBottom="@id/sportsImageDetail"
+android:padding="@dimen/activity_horizontal_margin"
+android:text="@string/title_bowling"
+android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+<TextView
+android:id="@+id/newsTitleDetail"
+style="@style/TextAppearance.AppCompat.Subhead"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/sportsImageDetail"
+android:padding="@dimen/activity_horizontal_margin"
+android:text="@string/news_label"
+android:textColor="?android:textColorSecondary" />
+
+<TextView
+android:id="@+id/subTitleDetail"
+style="@style/TextAppearance.AppCompat.Subhead"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/newsTitleDetail"
+android:layout_marginTop="0dp"
+android:padding="@dimen/activity_horizontal_margin"
+android:text="@string/filler_bowling" />
